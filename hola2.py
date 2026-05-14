@@ -51,7 +51,7 @@ try:
                 credito_mes = credito * x
                 print(f"{credito} x {x}: ${credito_mes}")
         elif opcion == 4:
-            clientes = int(input("Ingrese la cantidad de clientes"))
+            clientes = int(input("Ingrese la cantidad de clientes: \n"))
             while clientes <= 0:
                 clientes = int(input("La cantidad de clientes debe ser mayor a 0:\n"))
             for x in range (1, clientes +1 ):
@@ -61,4 +61,4 @@ try:
         else:
             print("Opción no válida.")
 except:
-    print("Una de las opciones ingresadas no corresponde al dato solicitado.")
+    print("Una de las opciones ingresadas no corresponde al tipo de dato solicitado.")
